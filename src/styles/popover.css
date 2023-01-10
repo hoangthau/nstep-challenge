@@ -1,0 +1,62 @@
+.popper .popper__arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+}
+
+.popper[data-popper-placement^="top"] {
+  margin-bottom: 5px;
+}
+
+.popper[data-popper-placement^="top"] .popper__arrow {
+  border-width: 5px 5px 0 5px;
+  border-color: #222 transparent transparent transparent;
+  bottom: -4px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.popper[data-popper-placement^="bottom"] {
+  margin-top: 5px;
+}
+
+.popper[data-popper-placement^="bottom"] .popper__arrow {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent #222 transparent;
+  top: -4px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.popper[data-popper-placement^="right"] {
+  margin-left: 5px;
+}
+
+.popper[data-popper-placement^="right"] .popper__arrow {
+  border-width: 5px 5px 5px 0;
+  border-color: transparent #222 transparent transparent;
+  left: -4px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.popper[data-popper-placement^="left"] {
+  margin-right: 5px;
+}
+
+.popper[data-popper-placement^="left"] .popper__arrow {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent #222;
+  right: -4px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.popper[data-x-out-of-boundaries] {
+    display: none;
+}

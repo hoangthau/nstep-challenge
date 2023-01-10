@@ -1,0 +1,14 @@
+.paging {
+  display: flex;
+  gap: 4px;
+}
+
+.page {
+  border: 1px solid #eee;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.page.active {
+  background-color: #dbdbdb;
+}
